@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ModuleExtender">
+      <UniqueIdentifier>{7a2b6682-1f48-42d9-bb11-645c51d76dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pdb">
+      <UniqueIdentifier>{4de86f4d-291f-4b36-95df-4b42261c9655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pdb\Extractors">
+      <UniqueIdentifier>{87a28aa6-d816-4f7b-a510-f99661438c66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{27c99bf4-94af-4075-b524-64e757fc3c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\Km">
+      <UniqueIdentifier>{c8a64f1c-6585-45e9-8f13-2a7bf83849aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\Km\jxy">
+      <UniqueIdentifier>{e18a2fe9-b236-4490-bb97-3a2b7200ffd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ModuleExtender">
+      <UniqueIdentifier>{e6097c4a-ae19-4e4a-8748-564cd98f2a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pdb">
+      <UniqueIdentifier>{f98da9d9-af65-4e0e-9319-c824554806eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{fcaf11a9-2973-4c18-a717-ef837d37999e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils\Km">
+      <UniqueIdentifier>{8ce8cf9d-efd3-48bf-8397-ca5b13a49a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils\Km\jxy">
+      <UniqueIdentifier>{7a678147-415a-4064-b71c-df20f0f6bc60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal">
+      <UniqueIdentifier>{1db19fda-4e05-4ce2-9d62-c9e8f75f6b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Phnt">
+      <UniqueIdentifier>{c6943181-0fac-4f98-ba0a-de5c1ff2851c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pdb\Extractors">
+      <UniqueIdentifier>{a0920cdc-bd6d-4991-9c21-2beb89bb08fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ModuleExtender\ModuleExtenderFactory.cpp">
+      <Filter>Source Files\ModuleExtender</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pdb\MsfReader.cpp">
+      <Filter>Source Files\Pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pdb\PdbGrabber.cpp">
+      <Filter>Source Files\Pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pdb\Extractors\StructExtractor.cpp">
+      <Filter>Source Files\Pdb\Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pdb\Extractors\SymbolExtractor.cpp">
+      <Filter>Source Files\Pdb\Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\FileStream.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\ScopedHandle.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\StreamReader.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Km\Log.cpp">
+      <Filter>Source Files\Utils\Km</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Km\ModuleFinder.cpp">
+      <Filter>Source Files\Utils\Km</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Km\ProcessCreator.cpp">
+      <Filter>Source Files\Utils\Km</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Km\ProcessCreatorFactory.cpp">
+      <Filter>Source Files\Utils\Km</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Km\jxy\alloc.cpp">
+      <Filter>Source Files\Utils\Km\jxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Km\jxy\msvcfill.cpp">
+      <Filter>Source Files\Utils\Km\jxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Registry.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SymbolicAccess\ModuleExtender\ModuleData.h">
+      <Filter>Header Files\ModuleExtender</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\ModuleExtender\ModuleExtender.h">
+      <Filter>Header Files\ModuleExtender</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\ModuleExtender\ModuleExtenderFactory.h">
+      <Filter>Header Files\ModuleExtender</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Internal\allocator.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Internal\map.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Internal\memory.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Internal\string.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Internal\vector.h">
+      <Filter>Header Files\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntbcd.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntdbg.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntexapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntgdi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntioapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntkeapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntldr.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntlpcapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntmisc.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntmmapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntnls.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntobapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpebteb.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpfapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpnpapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpoapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpsapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntregapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntrtl.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntsam.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntseapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntsmss.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\nttmapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\nttp.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntwow64.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntxcapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntzwapi.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\phnt.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\phnt_ntdef.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\phnt_windows.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\subprocesstag.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Phnt\winsta.h">
+      <Filter>Header Files\Phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Pdb\PdbGrabber.h">
+      <Filter>Header Files\Pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Pdb\MsfReader.h">
+      <Filter>Header Files\Pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Pdb\PdbStructs.h">
+      <Filter>Header Files\Pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Pdb\Extractors\StructExtractor.h">
+      <Filter>Header Files\Pdb\Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Pdb\Extractors\SymbolExtractor.h">
+      <Filter>Header Files\Pdb\Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\jxy\alloc.h">
+      <Filter>Header Files\Utils\Km\jxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\jxy\allocator.h">
+      <Filter>Header Files\Utils\Km\jxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\ProcessCreator.h">
+      <Filter>Header Files\Utils\Km</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\ScopedStackAttach.h">
+      <Filter>Header Files\Utils\Km</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\FileStream.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\Log.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\ModuleFinder.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\ProcessCreatorFactory.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\ProcessCreatorInterface.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\Registry.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\ScopedHandle.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SymbolicAccess\Utils\StreamReader.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

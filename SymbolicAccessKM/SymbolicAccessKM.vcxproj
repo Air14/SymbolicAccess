@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0D2AB51-4D3E-4C6D-B1BC-0CB6403AD4CB}</ProjectGuid>
+    <TemplateGuid>{dd38f7fc-d7bd-488b-9242-7d8754cde80d}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <RootNamespace>SymbolicAccessKM</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <IncludePath>$(ProjectDir)include;$(VC_IncludePath);$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <IncludePath>$(ProjectDir)include;$(VC_IncludePath);$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <IncludePath>$(ProjectDir)include;$(VC_IncludePath);$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <IncludePath>$(ProjectDir)include;$(VC_IncludePath);$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <IncludePath>$(ProjectDir)include;$(VC_IncludePath);$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <IncludePath>$(ProjectDir)include;$(VC_IncludePath);$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>ENABLE_LOGGING;_NO_CRT_STDIO_INLINE;NOMINMAX;_ARM64_;ARM64;_USE_DECLSPECS_FOR_SAL=1;STD_CALL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_NO_CRT_STDIO_INLINE;NOMINMAX;_ARM64_;ARM64;_USE_DECLSPECS_FOR_SAL=1;STD_CALL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>ENABLE_LOGGING;_NO_CRT_STDIO_INLINE;NOMINMAX;_X86_=1;i386=1;STD_CALL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_NO_CRT_STDIO_INLINE;NOMINMAX;_X86_=1;i386=1;STD_CALL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>ENABLE_LOGGING;_NO_CRT_STDIO_INLINE;NOMINMAX;_WIN64;_AMD64_;AMD64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_NO_CRT_STDIO_INLINE;NOMINMAX;_WIN64;_AMD64_;AMD64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ModuleExtender\ModuleExtenderFactory.cpp" />
+    <ClCompile Include="src\Pdb\Extractors\StructExtractor.cpp" />
+    <ClCompile Include="src\Pdb\Extractors\SymbolExtractor.cpp" />
+    <ClCompile Include="src\Pdb\MsfReader.cpp" />
+    <ClCompile Include="src\Pdb\PdbGrabber.cpp" />
+    <ClCompile Include="src\Utils\FileStream.cpp" />
+    <ClCompile Include="src\Utils\Km\jxy\alloc.cpp" />
+    <ClCompile Include="src\Utils\Km\jxy\msvcfill.cpp" />
+    <ClCompile Include="src\Utils\Km\Log.cpp" />
+    <ClCompile Include="src\Utils\Km\ModuleFinder.cpp" />
+    <ClCompile Include="src\Utils\Km\ProcessCreator.cpp" />
+    <ClCompile Include="src\Utils\Km\ProcessCreatorFactory.cpp" />
+    <ClCompile Include="src\Utils\Registry.cpp" />
+    <ClCompile Include="src\Utils\ScopedHandle.cpp" />
+    <ClCompile Include="src\Utils\StreamReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SymbolicAccess\Internal\allocator.h" />
+    <ClInclude Include="include\SymbolicAccess\Internal\map.h" />
+    <ClInclude Include="include\SymbolicAccess\Internal\memory.h" />
+    <ClInclude Include="include\SymbolicAccess\Internal\string.h" />
+    <ClInclude Include="include\SymbolicAccess\Internal\vector.h" />
+    <ClInclude Include="include\SymbolicAccess\ModuleExtender\ModuleData.h" />
+    <ClInclude Include="include\SymbolicAccess\ModuleExtender\ModuleExtender.h" />
+    <ClInclude Include="include\SymbolicAccess\ModuleExtender\ModuleExtenderFactory.h" />
+    <ClInclude Include="include\SymbolicAccess\Pdb\Extractors\StructExtractor.h" />
+    <ClInclude Include="include\SymbolicAccess\Pdb\Extractors\SymbolExtractor.h" />
+    <ClInclude Include="include\SymbolicAccess\Pdb\MsfReader.h" />
+    <ClInclude Include="include\SymbolicAccess\Pdb\PdbGrabber.h" />
+    <ClInclude Include="include\SymbolicAccess\Pdb\PdbStructs.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntbcd.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntdbg.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntexapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntgdi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntioapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntkeapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntldr.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntlpcapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntmisc.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntmmapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntnls.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntobapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpebteb.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpfapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpnpapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpoapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntpsapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntregapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntrtl.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntsam.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntseapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntsmss.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\nttmapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\nttp.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntwow64.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntxcapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\ntzwapi.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\phnt.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\phnt_ntdef.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\phnt_windows.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\subprocesstag.h" />
+    <ClInclude Include="include\SymbolicAccess\Phnt\winsta.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\FileStream.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\jxy\alloc.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\jxy\allocator.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\ProcessCreator.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\Km\ScopedStackAttach.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\Log.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\ModuleFinder.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\ProcessCreatorFactory.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\ProcessCreatorInterface.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\Registry.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\ScopedHandle.h" />
+    <ClInclude Include="include\SymbolicAccess\Utils\StreamReader.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
