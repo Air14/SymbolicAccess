@@ -178,6 +178,7 @@
     <ClCompile Include="src\Utils\Registry.cpp" />
     <ClCompile Include="src\Utils\ScopedHandle.cpp" />
     <ClCompile Include="src\Utils\StreamReader.cpp" />
+    <ClCompile Include="vector_algorithms.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SymbolicAccess\Internal\allocator.h" />
